@@ -22,7 +22,7 @@ public class DBConnect {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost/shansbook", "root", "");
             return con;
         } catch (SQLException ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DBConnect.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
 
